@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="../../packages/bootstarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <!-- ניווט -->
+<div id="nav">
+    <div id="logo">
+        <img src="../../assets/letters/R.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/L.b197b0.webp">
+</div> 
+    <ul class="nav justify-content-end" id="topNav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+          </li>
+      </ul>
+        <p id="time"></p>
+        <div id="userName"> <a href="../../pages/login/login.html"><i class="fas fa-user"></i><br></a> <p id="user">להתחברות</p></div>
+
+        <!-- ikon of the cart -->
+        <a href="../../pages/cart/cart.html">
+            <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+        </a>
+</div>
+   <!-- ניווט רקורסיבי -->
+    <nav id="k" class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+           
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="userName"><a href="../../pages/login/login.html"><i class="fas fa-user"></i><br><p id="user">להתחברות</p></a></div>
+          <a href="../../pages/cart/cart.html">
+            <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+        </a>
+        
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+                  </li>
+            
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- פרסומת -->
+      <div id="timerModal" class="modall">
+        <div id="modal-contenttDiv" class="modal-contentt">
+            <span class="closee">&times;</span>
+            <h2 id="pirsumH2">מבצעים שווים באתר כנסו לבקר אותנו!!</h2>
+        </div>
+    </div>
+    <div id="background-image">
+        <img src="../../assets/on.jpg" id="imge-1">
+        <img src="../../assets/off.jpg" id="imge-2">
+        <h1>מנורות לד אישיות <br> לאקססוריז מפנק</h1>
+        <button id="btnShow" class="form-control"><a href="../../pages/designs/designs.html">להדגמות מרהיבות הקליקו כאן</a></button>
+    </div>
+    <div id="title">
+        <h1>אותיות מאירות</h1>
+        <h3>לשידרוג והקפצת הלוק והאווירה</h3>
+    </div>
+
+    <button id="link">
+        <a href="../products/products.html">כאן תזמינו לעצמכם את הקסם הזה</a>
+    </button>
+    <div id="example">
+        <img src="../../assets/סמל.png">
+        <h2>המפרט של המנורות</h2>
+        <div id="imgDetails"><img src="../../assets/מפרט.png" alt=""></div>
+    </div>
+
+    <div id="maraz">
+        <img class="img" src="../../assets/סמל.png">
+        <h1>אריזת פרמיום מפוארת</h1>
+        <p>כדי שהמתנה שלכם תהיה מושלמת <br>
+            הכנו לכם גם מארז מעוצב ויחודי
+        </p>
+        <h3>מארז פרמיום מפואר</h3>
+    </div>
+    <img src="../../assets/מארז פרמיום.png" alt="">
+    <div id="detailsOfMaraz">
+        <h1>מה כולל המארז?</h1>
+        <ul>
+            <li>המנורה נתונה בתוך מסגרת מעוטרת בדיגום עדין ויוקרתי</li>
+            <li>המכסה מוגבה, עם הדפסה מובלטת ויחודית להגנה על המנורה</li>
+            <li>כרטיס הקדשה מובנה בצידו הפנימי של המכסה</li>
+        </ul>
+        <img class="img" src="../../assets/סמל.png">
+    </div>
+    <div id="titleOfAnswers">
+        <h2>אנחנו כבר יודעים מה אתם שואלים:)
+            <br>
+            הנה התשובות שלנו:
+        </h2>
+    </div>
+    <div id="row_1">
+        <div id="answer_1" class="answer">
+            <h1>האותיות קיימות רק באנגלית?</h1>
+            <h2>כן בינינו הכי קורץ באנגלית... :)
+                <br>מבחינה תכנית אין אפשרות לייצר
+                <br>בעברית,
+                <br>יש אותיות עם נתק (ה) יש קצרות (י)
+                <br>
+                ויש ארוכות (ק)
+                <br>
+                
+            </h2>
+        </div>
+
+        <div id="answer_2" class="answer">
+            <h1>איזה סוללות תואמות למנורות
+                <br>
+                וכמה זמן הן פועלות?
+            </h1>
+            <h2>
+                רכשו אותיות איכותיות AAA (לא בשקל)
+                <br>
+                ותהנו מהמנורות זמן רב.
+              
+            </h2>
+        </div>
+
+        <div id="answer_3" class="answer">
+            <h1>האם המנורות ממש מאירות, או
+                <br>
+                שהן רק לנוי?
+            </h1>
+            <h2>
+                המנורות מאירות כמנורות לילה לכל
+                <br>
+                דבר,
+                <br>
+                כל האזור מואר באור בהיר ורך ואפשר
+                <br>
+                לקרא, להירדם וגם לחלום...
+            </h2>
+        </div>
+    </div>
+        <div id="row_2">
+        <div id="answer_4" class="answer">
+            <h1>המנורות קיימות בצבעים אחרים?
+                <br>
+                במידות אחרות?
+            </h1>
+            <h2>
+                המנורות קיימות רק בלבן ורק במידות שכתבנו
+                <br>
+                בסוד נספר לכם,
+                <br>
+                שבהמשך ניתן יהיה להדפיס תמונות
+                <br>
+                וטקסטורות על המנורות,
+                <br>
+                אל תדאגו, נעדכן...
+            </h2>
+        </div>
+        
+        <div id="answer_5" class="answer">
+            <h1>מה ההבדל בין מארז רגיל
+                <br>
+                למארז פרמיום?
+            </h1>
+            <h2>
+                מארז רגיל זו קופסת קרטון רגילה-
+                <br>
+                חומה- מתאים למתנה לעצמנו.
+                <br>
+                מארז פרמיום - מושקע ומעוצב -
+                <br>
+                כדי שהמתנה שלכם תהיה מושלמת בלי 
+                <br>
+                להתעסק עם עיצוב ועיטוף.
+            </h2>
+        </div>
+
+        
+        <div id="answer_6" class="answer">
+            <h1>יש הנחה ברכישה מרוכזת?</h1>
+            <h2>
+                בוודאי,
+                <br>
+                צרו איתנו קשר ב"רכישה מרוכזת"
+                <br>
+                ותקבלו שירות מצוין:)
+            </h2>
+        </div>
+    </div>
+    <div class="mt-4">
+        <!-- Facebook -->
+        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+        <!-- Dribbble -->
+        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+        <!-- Twitter -->
+        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+        <!-- Google + -->
+        <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+        <!-- Linkedin -->
+      </div>
+      <div class="development" >
+        <p>--development by nechami & esti--</p>
+      </div>
+    </div>
+
+
+
+
+<script src="../../packages/bootstarp/js/bootstrap.bundle.min.js"></script>
+<script src="../../packages/bootstarp/js/bootstrap.min.js"></script>
+</body>
+<script src="../../packages/jquery-3.6.4.min.js"></script>
+<script src="../../packages/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+<script src="../../data/letters.json"></script>
+<script src="../home/home .js"></script>
+<script src="../../styles/nav.js"></script>
+
+</html>

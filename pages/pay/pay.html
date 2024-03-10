@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="../../packages/fonts/FontsFree-Net-Monster-School.ttf">
+    <link rel="stylesheet" href="../../mainStyle (2).css">
+    <link rel="stylesheet" href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="../../packages/bootstarp/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../pages/pay/pay.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="userName"> <a href="../../pages/login/login.html"><i class="fas fa-user"></i><br>להתחברות</a></div>
+    <div id="file">
+        <h1>your order in loud</h1>
+        <p>* יש למלאות את כל השדות הנדרשים </p>
+        <div id="ikon" class="fas fa-lock "></div>
+
+        <fieldset id="step_1">
+            <div class="form-card">
+                <h2 class="title">התחברות לחשבון</h2>
+                <input type="email" id="email" placeholder="אימייל"><br>
+                <input type="text" id="userInput" placeholder="שם משתמש"><br>
+                <input type="password" id="pw" placeholder="סיסמא"><br>
+                <input type="password" id="pwT" placeholder="אימות סיסמא"><br>
+            </div>
+            <button  id="nextStep_1">next step</button>
+        </fieldset>
+        <!-- שלב שני -->
+        <fieldset id="step_2">
+            <div class="form-card">
+                <h2 class="title">פרטים אישיים</h2>
+                <input type="text" id="fullName" placeholder="שם מלא">
+                <input type="text" id="address" placeholder="כתובת">
+                <input type="text" id="numOfHouse" placeholder="מס' דירה">
+                <input type="text" id="phone" placeholder="פלאפון">
+            </div>
+            <button id="previous_2">previous</button>
+            <button id="nextStep_2">next step</button>
+        </fieldset>
+        <!-- שלב שלישי -->
+        <fieldset id="step_3">
+            <div class="form-card">
+                <h2 class="title"> תשלום</h2>
+                <label class="pay">*שם בעל הכרטיס</label>
+                <input type="text" id="cardName">
+
+                <div id="row">
+                    <div class="col-1">
+                        <label class="pay">מס' כרטיס*</label>
+                        <input type="text" id="cardno" placeholder="" minlength="12" maxlength="16" />
+                    </div>
+                    <div class="col-2">
+                        <label class="pay">CVC*</label>
+                        <input type="password" id="cvcpwd" placeholder="***" minlength="3" maxlength="3" />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-3">
+                        <label class="pay">תאריך תפוגה*</label>
+                        <input type="text" id="inputDate" placeholder="__/__ ">
+                    </div>
+                </div>
+            </div>
+            <button id="previous_3">previous</button>
+            <button id="nextStep_3">next step</button>
+        </fieldset>
+        <fieldset id="step_4">
+            <div class="form-card">
+                <h2 class="title">Success!!</h2>
+                <img src="../../assets/delivery.gif" alt="">
+                <p>הזמנתך תגיע תוך 5 ימי עסקים לכתובת:
+                    <span id="addresSpan"></span>
+                </p>
+            </div>
+        </fieldset>
+    </div>
+
+   
+
+</body>
+<script src="../../pages/pay/pay.js"></script>
+
+</html>

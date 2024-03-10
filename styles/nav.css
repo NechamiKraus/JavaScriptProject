@@ -1,0 +1,105 @@
+
+body{
+    direction: rtl;
+    background-color: black;
+}
+#nav{
+    margin-top: 2%;
+    display: flex;
+}
+#logo{
+    margin-right: 10%;
+    width: 15%;
+    height: 55%;
+}
+#logo>img{
+    width: 10%;
+    height: 20%;
+}
+.nav-link{
+    color: #D8AC5A;
+    font-size: 120%;
+}
+#time{
+    margin-right: 50%;
+    color: #D8AC5A;
+    font-size: 100%;
+}
+#userName{
+    color: #D8AC5A;
+    margin-right: 3%;
+    margin-left: 3%;
+   }
+#userName>a{
+    font-size: 15px;
+    text-decoration: none;
+    color:  #D8AC5A;
+}
+#userName>#user{
+    color:  #D8AC5A; 
+    font-size: 15px; 
+    z-index: 999999; 
+    position: absolute;
+}
+#nav>a>#basketIkon>i
+,.container-fluid>a>#basketIkon>i{
+    font-size: 20px;
+    width: 40px;
+    height: 35px;
+    border-radius: 3px;
+    background-color:  #D8AC5A;
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#myBtn{
+    background-color: black;
+}
+#myBtn>i{
+   color: #D8AC5A;
+   font-size: 30px;
+}
+#myInput{
+    outline: none;
+    background-color: black;
+    border-radius: 8px;
+    width: 280px;
+    border-color: #D8AC5A;
+    height: 50px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    color: #D8AC5A;
+    font-weight: bolder;   
+    font-size: 20px;
+}
+
+#k{
+    display: none;
+}
+.navbar-toggler{
+display: none;
+color: #D8AC5A;
+}
+.container-fluid{
+    display: flex;
+    justify-content:space-between ;
+}
+#topNav{
+    display: flex;
+    position: absolute;
+    margin-right: 20%;
+}
+@media (max-width: 750px){
+.navbar-toggler{
+        display: block;
+        }
+        #k{
+            position: sticky;
+            display: block;
+        }
+        #nav{
+            display: none;
+        }
+}

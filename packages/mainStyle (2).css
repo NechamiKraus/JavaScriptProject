@@ -1,0 +1,398 @@
+@font-face{
+  font-family: my_font;
+  src: url(fonts/FontsFree-Net-Monster-School.ttf);
+}
+@font-face{
+  font-family: my_font;
+  src: url(fonts/FontsFree-Net-Monster-School.ttf);
+}
+@font-face{
+  font-family: height_font;
+  src: url(fonts/AmaticSC-Bold.ttf);
+}
+  
+/*  */
+.hide{
+  display: none;
+}
+/*  */
+.ourHomePage-height{
+  height: 57vh;
+}
+.ourHomePage-height-lg{
+  height: 80vh;
+}
+.ourHomePage-height-sm{
+  height: 50vh;
+}
+
+body{
+  direction: rtl;
+  right: 0;
+  left: 0;
+  background-color:#ffffff;
+  overflow-x: hidden;
+} 
+/*  */
+.scrolling-activ{
+  background-color: #fff!important;
+  box-shadow:0,3px,1rem, rgba(0,0,0,.1)!important;
+}
+
+/* navbar- תפריט עליון */
+
+#logo_img{
+  width:270px;
+  height:50px;
+}
+
+
+/* חץ של dropdown*/
+.dropdown-toggle::before {
+  display: none;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.dropdown-toggle:empty::before {
+  margin-left: 0;
+}
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.nav-item{
+  padding-left:7px;
+  padding-right:7px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+/*icon menu*/
+.nav-link:hover, .nav-link:focus {
+  color: black;
+}
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link i{
+  padding-left:3px;
+  padding-right:3px;
+}
+.navSearch{
+  border: none;
+  border-bottom: black 2px solid;
+}
+/* Underline*/
+.dropdown {
+  display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+.dropdown-menu li{
+  padding: 6px;
+}
+.dropdown::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: rgb(63, 63, 63);
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
+}
+
+.dropdown:hover::after,
+.dropdown:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+.dropdown::after {
+  opacity :1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.dropdown:hover::after,
+.dropdown:focus::after{
+  transform: scale(1);
+}
+
+/*  */
+.counter{
+  font-family: my_font;
+  color: hwb(14 19% 63%);
+  text-align: center;
+  font-size: calc(2.5rem + 2vw) !important;
+  background-color: #f9f8f4; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.counter_txt{
+  font-family: my_font;
+  color: hwb(14 40% 42%);
+  text-align: center;
+}
+/*  */
+
+/* recomended המומלצים שלנו*/
+.recomended_row{
+  position: relative;
+  overflow: hidden;
+  --bs-gutter-x: 0;
+}
+  /* טקסט באמצע */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text-our-font{
+  font-family: my_font;
+  font-size: -webkit-xxx-large;
+}
+
+/* כפתור מומלץ באמצע */
+.btn_centered{
+  width: 20%;
+  height: 12%;
+  border-radius: 2px;
+  background-color: black;
+  /* bottom: 10%; */
+  /* position: absolute; */
+  /* left: 40%; */
+
+}
+.btn_centered i{
+  color: rgb(242 242 242);
+}
+.btn_centered:hover{
+  -webkit-transition: 2s;
+  transition:background-color 2s;
+  color:gray;
+}
+.rec{
+  position: relative; 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+  transition: all 1s;
+  height:auto;
+  filter: brightness(30%);
+}
+.first_rec{
+  background-image:url(imag/movenpick-the-art-of.jpg) ;
+}
+.second_rec{
+  background-image: url(imag/dubaiunited-arab-emirates-july-10-600w-1773598538.webp);
+}
+.first_rec_text ,.second_rec_text{
+  position: relative; 
+  z-index: 1;
+  background-color: rgb(242 242 242);
+  text-align: center;
+}
+
+.rec:hover{
+  transform: scale(1.1);
+  filter: brightness(100%);
+  transition-duration: 1500ms;
+}
+/*  */
+/* עלינו */
+.about_us{
+  background: url(imgs/product_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  filter: brightness(25%);
+}
+/* טעימות מחיי ג'לטו */
+.tatst-our-life-txt{
+  position: absolute; top: 50px; z-index: 1;
+  color: rgb(255 250 247);
+  font-size: 80px;
+}
+
+.txt{
+  color: rgb(255 250 247);
+  font-size: 76px; 
+  z-index: 1;
+  text-align: center;
+}
+.taste{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: brightness(28%);
+  transition: all 1s;
+}
+p{
+  text-align: center;
+}
+.taste:hover{
+/* animation-name: bright-img;
+animation-duration: 3s;
+animation-timing-function:ease-in-out; */
+transform: scale(1.1);
+transition-duration: 1500ms;
+}
+@keyframes bright-img{
+  from {filter: brightness(40%);}
+  to {filter: brightness(100%);}
+}
+
+/* keep in touch */
+.email-kit{
+  border-bottom: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+.email-kit:focus {
+  color: #212529;
+  /* background-color: #fff; */
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  outline: 0;
+  box-shadow:none;
+}
+.kit-input[type=checkbox]:indeterminate {
+  background-color:rgba(0, 0, 0, 0.565)!important;
+  border-color: rgba(0, 0, 0, 0.565)!important;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
+}
+.kit-input:focus {
+  border-color: rgb(196, 196, 196);
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(196, 196, 196);
+}
+.kit-input:checked {
+  background-color:rgba(0, 0, 0, 0.565)!important;
+  border-color: rgba(0, 0, 0, 0.565)!important;
+}
+@media screen and (max-width: 800px)and (min-width:300px)  {
+ .kit-form{
+  width: 75%!important;
+ }
+body {
+  overflow-x: hidden;
+}
+.ourHomePage-height{
+  height: 22vh!important;
+}
+.ourHomePage-height-lg{
+  height: 90vh;
+}
+.ourHomePage-height-sm{
+  height: 17vh;
+
+}
+.tatst-our-life-txt{
+  font-size: -webkit-xxx-large;
+}
+
+.p-au{
+  line-height:1;
+  font-size: 8px;
+  width:100%;
+
+}
+}
+.btn-to-branches{
+  z-index: 1;
+    width: 50px;
+}
+.styleproducts{
+  background-color:#fdf8f6;
+  padding: 15px;
+  width: 300px;
+  height: 400px;
+/* border: 2px solid black; */
+    /* margin: 10px; */
+}
+.styleproductsinner{
+  padding: 15px;
+  width: 300px;
+  height: 350px;
+    /* margin: 10px; */
+}
+.styleproductsname{
+  text-align: center ;
+  font-size: x-large;
+  font-family: height_font;
+
+}
+.brown{
+color: hwb(14 40% 42%);
+}
+.b-white{
+  background-color: #ffffff;
+}
+.text-header{
+  font-family: my_font;
+  color:#8a5342 ;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 50px;
+}
+.image_button{
+border: none;
+background-color: rgba(255,255,255,0);
+ }
+ .container-fluid{
+  background-color:#ffffff;
+  top:0;
+}
+.selectcolor{
+  color: lawngreen;
+  }
+  .below{
+    margin-top: 80px;
+  }
+  .my_h1{
+    font-family: my_font;
+    font-weight: 500;
+    font-size: 90px !important;
+    color: #a07467 !important;
+    text-align: center;
+  }
+.cust_love{
+  list-style: none;
+  background-color: #ffffff ;
+}
+
+
+

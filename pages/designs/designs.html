@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../packages/bootstarp/css/bootstrap.min.css">
+    <link rel="stylesheet"href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" href="../../styles/nav.css">
+    <link rel="stylesheet" href="../designs/designs.css">
+</head>
+
+<body>
+  <div id="nav">
+    <div id="logo">
+        <img src="../../assets/letters/R.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/L.b197b0.webp">
+</div> 
+    <ul class="nav justify-content-end" id="topNav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+          </li>
+      </ul>
+        <p id="time"></p>
+        <div id="userName"> <a href="../../pages/login/login.html"><i class="fas fa-user"></i><br></a> <p id="user">להתחברות</p></div>
+
+        <!-- ikon of the cart -->
+        <a href="../../pages/cart/cart.html">
+            <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+        </a>
+</div>
+   
+       
+
+
+    <nav id="k" class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+           
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="userName"><a href="../../pages/login/login.html"><i class="fas fa-user"></i><br><p id="user">להתחברות</p></a></div>
+          <a href="../../pages/cart/cart.html">
+            <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+        </a>
+        
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+                  </li>
+            
+              </ul>
+              <!-- <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+              </form> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+ 
+    <div id="title"><h2> להדגמות מרהיבות הקליקו כאן <i class="fas fa-arrow-down"></i></h2></div>
+
+
+    <div id="allImages">
+        <div class="clickImg" id="barim-flowers"> 
+            <img src="../../assets/pictures/catalog-8.b197b0.webp" >
+            <p>שילוב בזרי פרחים לאירוסין</p>
+        </div>
+        <div class="clickImg" id="home-styling">
+            <img src="../../assets/pictures/7-3.b197b0.webp" >
+            <p>הומסטיילינג לכל פינה בבית ובמשרד</p> 
+        </div>
+        
+        <div class="clickImg" id="bed-rooms">
+          <img src="../../assets/pictures/catalog-5.b197b0.webp" >
+          <p>אקססוריז מפנק בחדרי שינה ואירוח</p>
+      </div>
+      <div class="clickImg" id="marazim">
+        <img src="../../assets/pictures/2-5.b197b0.webp" >
+        <p>משלוחי הוקרה אישיים ויחודיים</p>
+    </div>
+        
+    </div>
+   
+          
+   
+    <div id="imageContainer">
+        <i id="close" class="fas fa-window-close"></i>
+    </div>
+    
+</body>
+<script src="../../packages/jquery-3.6.4.min.js"></script>
+<script src="../../services/designsAjax.js"></script>
+<script src="../designs/designs.js"></script>
+<script src="../../styles/nav.js"></script>
+
+</html>

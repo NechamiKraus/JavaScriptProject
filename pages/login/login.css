@@ -1,0 +1,103 @@
+@import url("../../packages/fonts/FontsFree-Net-Monster-School.ttf");
+@import url("../../packages/fonts/FontsFree-Net-Monster-School.ttf");
+@font-face{
+    font-family: my_font;
+    src: url(../../packages/fonts/FontsFree-Net-Monster-School.ttf);
+  }
+  @import url("../../packages/fonts/AmaticSC-Bold.ttf");
+  @import url("../../packages/fonts/AmaticSC-Bold.ttf");
+  @font-face{
+    font-family: font;
+    src: url(../../packages/fonts/AmaticSC-Bold.ttf);
+  }
+ body{ 
+     background-image: url(../../שקופית1.JPG);
+} 
+
+#registerWindow,#connectWindow{
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 15%;
+    background-color: rgb(32, 29, 29);
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px  #D8AC5A;
+    padding: 5% 3% 6% 3%;
+    box-sizing: border-box;
+    width: 70%;
+}
+#form{
+    padding-top: 20%;
+    padding-left: 7%;
+}
+#form>input,#connectWindow>input{
+    font-size: 100%;
+    font-family: font;
+    flex-wrap: wrap;
+    outline: none;
+    direction: ltr;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #D8AC5A;
+    color: #D8AC5A;
+    width: 100%;
+    margin-top: 12%;
+}
+#singin,#back,#connect{
+   
+    font-size: 80%;
+    font-weight: bolder;
+    font-family: "Source Sans" , sans-serif;
+    position: absolute;
+    background-color: black;
+    border-color: #D8AC5A;
+    background-image: linear-gradient(128deg,#D8AC5A,#ECD6AC,#D8AC5A);
+    color: black;
+    height: 6%;
+    width: 70%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
+#back{
+    margin-top: 20%;
+}
+#connect>a{
+    text-decoration: none;
+    font-family: "Source Sans" , sans-serif;
+    color: black;
+    font-size: 100%;
+    font-weight: bolder;
+}
+#registerWindow>h1,#connectWindow>h1{
+        padding-right: 10%;
+        font-family: my_font;
+        color: #D8AC5A;
+        display: flex;
+        position: absolute;
+        font-size: 300%;
+        font-weight: normal;
+           
+}
+@media (max-width: 1050px){
+    #registerWindow>h1,#connectWindow>h1{
+        font-size:170% ;
+    }
+   
+}
+
+
+@media (max-width: 800px){
+    #registerWindow>h1,#connectWindow>h1{
+        font-size:120%;
+    }
+    #singin,#back,#connect{
+        font-size: 60%;
+    }
+#registerWindow>h1{
+    font-size:120%;
+
+}
+
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../packages/bootstarp/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../packages/fontawesome-free-6.1.1-web/css/all.css">
+  <link rel="stylesheet" href="../../packages/fonts/AmaticSC-Bold.ttf">
+  <link rel="stylesheet" href="../../packages/mainStyle (2).css">
+  <link rel="stylesheet" href="../../packages/ספריית אייקונים - font awesome/fontawesome-free-5.12.0-web/fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="../products/products.css">
+  <link rel="stylesheet" href="../../styles/nav.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="nav">
+    <div id="logo">
+        <img src="../../assets/letters/R.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/T.b197b0.webp">
+        <img src="../../assets/letters/E.b197b0.webp">
+        <img src="../../assets/letters/L.b197b0.webp">
+</div> 
+    <ul class="nav justify-content-end" id="topNav">
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+          </li>       
+      </ul>
+
+
+
+        <p id="time"></p>
+        <div id="userName"> <a href="../../pages/login/login.html"><i class="fas fa-user"></i><br></a> <p id="user">להתחברות</p></div>
+
+        <!-- ikon of the cart -->
+        <a href="../../pages/cart/cart.html">
+            <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+        </a>
+</div>
+<!-- ניווט רספונסיבי -->
+<nav id="k" class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="userName"><a href="../../pages/login/login.html"><i class="fas fa-user"></i><br><p id="user">להתחברות</p></a></div>
+    <a href="../../pages/cart/cart.html">
+      <div id="basketIkon"><i class="fas fa-shopping-cart"></i></div>
+  </a>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+              <a class="nav-link" href="../../pages/home/home.html">עמוד הבית</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/products/products.html">רכישת אותיות</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../../pages/designs/designs.html">עיצובים</a>
+            </li>
+      
+        </ul>
+        <!-- <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form> -->
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <div id="page">
+    <h1>Purchase of illuminated letters</h1>
+<!-- חיפוש -->
+    <div id="searchAll">
+      <button type="button" class="input-group-text border-0 bg-transparent" id="myBtn" data-bs-toggle="modal"
+        data-bs-target="#exampleModal">
+        <i id="ikonSearch" class="fas fa-search"></i>
+      </button>
+      <input type="search" class="form-control rounded navSearch" id="myInput" value="" placeholder="חפש אות"
+        aria-label="Search" aria-describedby="search-addon" />
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" id="btnx" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="letters"></div>
+
+    <div id="addItem"><p>הפריט נוסף בהצלחה!!</p><br>
+      <div id="towbuttons">
+      <button id="btnCloseWindow">להמשך קניה באתר</button>
+      <button id="btnToPay"><a href="../cart/cart.html">למעבר לסל</a></button></div>
+    </div>
+  </div>
+  <script src="../../packages/bootstarp/js/bootstrap.min.js"></script>
+  <script src="../../packages/bootstarp/js/bootstrap.bundle.min.js"></script>
+</body>
+<script src="../../packages/jquery-3.6.4.min.js"></script>
+<script src="../../services/services.js"></script>
+<script src="../../services/search.js"></script>
+<script src="../products/products.js"></script>
+<script src="../../styles/nav.js"></script>
+</html>
